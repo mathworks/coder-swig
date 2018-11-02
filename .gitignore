@@ -1,0 +1,6 @@
+codegen
+fooJava
+fooCsharp
+*~
+*.class
+*.exe
