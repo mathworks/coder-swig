@@ -1,8 +1,8 @@
 # Description
-Shows a simple timestwo elementwise multiplication example. This
-example shows how generated emxArray types can be used from C# and
-Java. Run `doitCsharp` and `doitJava` to see the C# and Java examples,
-respectively.
+Shows a simple timestwo scalar multiplication example. This example
+shows how to call generated code taking and returning scalar doubles
+can be used from C# and Java. Run `doitCsharp` and `doitJava` to see
+the C# and Java examples, respectively.
 
 You should see output similar to:
 
@@ -15,21 +15,10 @@ Evaluating command
 produced output:
 
 Calling initialize
-Initial data
-0.0, 
-1.0, 
-2.0, 
-3.0, 
-4.0, 
-5.0
+Input = 3.0
 Generated code from MATLAB fprintf: Entering timestwo
 Generated code from MATLAB fprintf: Exiting timestwo
-0.0, 
-2.0, 
-4.0, 
-6.0, 
-8.0, 
-10.0
+Result = 6.0
 Calling terminate
 
 >> doitCsharp
@@ -40,20 +29,9 @@ Evaluating command
 produced output:
 
 Calling initialize
-Initial data
-0, 
-1, 
-2, 
-3, 
-4, 
-5
+Input = 3
 Generated code from MATLAB fprintf: Entering timestwo
 Generated code from MATLAB fprintf: Exiting timestwo
-0, 
-2, 
-4, 
-6, 
-8, 
-10
+Result = 6
 Calling terminate
 ```
