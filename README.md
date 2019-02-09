@@ -10,6 +10,12 @@ languages like Java and C#. Each subdirectory contains a separate example with:
   code for each language. E.g.: `doitCsharp.m`, `doitJava.m`, etc.
 * Example Java and C# tests using the generated C and SWIG code
 
+# Getting started
+
+There are a set of beginning examples based on a simple `timestwo`
+function that are a good starting point. Follow them in numeric order
+to see progressively increasing complexity.
+
 # Requirements
 
 This is tested with MATLAB R2018a on Ubuntu and Debian and requires:
@@ -22,4 +28,3 @@ This is tested with MATLAB R2018a on Ubuntu and Debian and requires:
 ```bash
 apt install swig build-essential default-jdk mono-mcs
 ```
-
