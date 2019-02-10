@@ -6,6 +6,7 @@ the C# and Java examples, respectively.
 
 You should see output similar to:
 
+**C#**
 ```
 >> doitCsharp
 Evaluating command
@@ -31,7 +32,10 @@ Generated code from MATLAB fprintf: Exiting timestwo
 8,
 10
 Calling terminate
+```
 
+**Java**
+```
 >> doitJava
 Evaluating command
 

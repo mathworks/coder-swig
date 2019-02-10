@@ -6,6 +6,24 @@ the C# and Java examples, respectively.
 
 You should see output similar to:
 
+**C#**
+```
+>> doitCsharp
+Evaluating command
+
+    ./timestwoMain.exe
+
+produced output:
+
+Calling initialize
+Input = 3
+Generated code from MATLAB fprintf: Entering timestwo
+Generated code from MATLAB fprintf: Exiting timestwo
+Result = 6
+Calling terminate
+```
+
+**Java**
 ```
 >> doitJava
 Evaluating command
@@ -19,19 +37,5 @@ Input = 3.0
 Generated code from MATLAB fprintf: Entering timestwo
 Generated code from MATLAB fprintf: Exiting timestwo
 Result = 6.0
-Calling terminate
-
->> doitCsharp
-Evaluating command
-
-    ./timestwoMain.exe
-
-produced output:
-
-Calling initialize
-Input = 3
-Generated code from MATLAB fprintf: Entering timestwo
-Generated code from MATLAB fprintf: Exiting timestwo
-Result = 6
 Calling terminate
 ```
