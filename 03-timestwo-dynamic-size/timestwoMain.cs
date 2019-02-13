@@ -51,6 +51,10 @@ public class timestwoMain {
             // Call terminate function to perform any necessary clean up
             System.Console.WriteLine("Calling terminate");
             timestwocs.timestwo_terminate();
+
+            // No need to clean up emxArray variables as destructors are
+            // automatically called and have the call to emxDestroy_real_T
+            // injected in them
         }
     }
 }

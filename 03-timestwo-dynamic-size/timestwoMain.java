@@ -62,6 +62,9 @@ public class timestwoMain {
         System.out.println("Calling terminate");
         timestwo.timestwo_terminate();
 
-        // No need to clean up as destructors are automatically called
+        // No need to clean up emxArray variables as destructors are
+        // automatically called and have the call to emxDestroy_real_T
+        // injected in them
+
     }
 }
