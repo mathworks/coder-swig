@@ -7,6 +7,10 @@ def main():
     timestwo.timestwo_initialize();
     m = 2
     n = 3
+    dims = timestwo.intArray(2);
+    dims[0] = m;
+    dims[1] = n;
+
     numel = m*n
 
     # Input data
@@ -17,14 +21,24 @@ def main():
     print "Initial data"
     print_array(input, numel)
 
-    # Result data
-    result = timestwo.doubleArray(numel)
+    # Construct input emxArray
+    x = timestwo.emxCreateWrapper_real_T(input.cast(), m, n)
+
+    # Construct output emxArray
+    y = timestwo.emxCreate_real_T(0, 0)
 
     # Call entry-point
-    timestwo.timestwo(input.cast(), result.cast());
+    timestwo.timestwo(x, y)
 
     # Gather returned data
-    print_array(result, numel)
+    output = timestwo.doubleArray.frompointer(y.data)
+    outputND = y.numDimensions
+    outputSize = timestwo.intArray.frompointer(y.size)
+    outputNumel = 1
+    for dim in range(0, outputND):
+        outputNumel *= outputSize[dim];
+
+    print_array(output, outputNumel)
 
     # Call terminate function to perform any necessary clean up
     print "Calling terminate"

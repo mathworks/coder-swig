@@ -1,8 +1,9 @@
 # Description
-Shows a simple timestwo elementwise multiplication example. This
-example shows how generated emxArray types can be used from C# and
-Java. Run `doitCsharp` and `doitJava` to see the C# and Java examples,
-respectively.
+Shows a simple timestwo elementwise multiplication example with a
+dynamically allocated matrix input. This example shows how generated
+emxArray types can be used from C#, Java, and Python. Run
+`doitCsharp`, `doitJava`, and `doitPython` to see the C#, Java, and
+Python examples, respectively.
 
 You should see output similar to:
 
@@ -59,5 +60,32 @@ Generated code from MATLAB fprintf: Exiting timestwo
 6.0,
 8.0,
 10.0
+Calling terminate
+```
+**Python**
+```
+>> doitPython
+Evaluating command
+
+    python timestwoMain.py
+
+produced output:
+
+Calling initialize
+Initial data
+0,
+1,
+2,
+3,
+4,
+5,
+Generated code from MATLAB fprintf: Entering timestwo
+Generated code from MATLAB fprintf: Exiting timestwo
+0,
+2,
+4,
+6,
+8,
+10,
 Calling terminate
 ```

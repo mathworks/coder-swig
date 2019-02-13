@@ -31,4 +31,3 @@
         emxDestroyArray_real_T($self);
     }
 }
-
