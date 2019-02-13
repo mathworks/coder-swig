@@ -1,8 +1,9 @@
 # Description
 Shows a simple timestwo scalar multiplication example. This example
 shows how to call generated code taking and returning scalar doubles
-can be used from C# and Java. Run `doitCsharp` and `doitJava` to see
-the C# and Java examples, respectively.
+can be used from C#, Java, and Python. Run `doitCsharp`, `doitJava`,
+and `doitPython` to see the C#, Java, and Python examples,
+respectively.
 
 You should see output similar to:
 
@@ -37,5 +38,22 @@ Input = 3.0
 Generated code from MATLAB fprintf: Entering timestwo
 Generated code from MATLAB fprintf: Exiting timestwo
 Result = 6.0
+Calling terminate
+```
+
+**Python**
+```
+>> doitPython
+Evaluating command
+
+    python timestwoMain.py
+
+produced output:
+
+Calling initialize
+Input = 3
+Generated code from MATLAB fprintf: Entering timestwo
+Generated code from MATLAB fprintf: Exiting timestwo
+Result = 6
 Calling terminate
 ```
