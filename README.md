@@ -2,13 +2,14 @@
 
 This project collects examples of generating code from MATLAB programs
 with MATLAB Coder and interfacing that generated code to various
-languages like Java and C#. Each subdirectory contains a separate example with:
+languages like C#, Java, and Python. Each subdirectory contains a
+separate example with:
 
 * MATLAB computational code
 * A SWIG interface file
 * MATLAB scripts to call codegen, invoke SWIG, and build the resultant
-  code for each language. E.g.: `doitCsharp.m`, `doitJava.m`, etc.
-* Example Java and C# tests using the generated C and SWIG code
+  code for each language. E.g.: `doitCsharp.m`, `doitJava.m`, `doitPython.m`, etc.
+* Example C#, Java, and Python main functions using the generated C and SWIG code
 
 # Getting started
 
