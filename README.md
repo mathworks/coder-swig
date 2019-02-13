@@ -27,9 +27,9 @@ This is tested with MATLAB R2018a on Ubuntu and Debian and requires:
 * SWIG
 * A Java JDK
 * Mono command-line development tools
-* Python development headers and libraries
+* Python development headers, libraries, and tools
 * C or C++ build tools
 
 ```bash
-apt install swig build-essential default-jdk mono-mcs python2.7-dev
+apt install swig build-essential default-jdk mono-mcs python2.7-dev python-dev
 ```
