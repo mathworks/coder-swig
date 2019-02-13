@@ -11,6 +11,10 @@ if exist(d,'dir')
     rmdir(d,'s');
 end
 mkdir(d);
+
+% Treat timestwoPython as a package
+!touch timestwoPython/__init__.py
+
 checkedSystem(['swig -module timestwo -python -outdir timestwoPython ' ...
                '-o timestwoPython/timestwo_wrap.c timestwo.i'])
 

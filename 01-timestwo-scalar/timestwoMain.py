@@ -1,8 +1,6 @@
 def main():
     "Main function to test timestwo generated code"
-    import sys
-    sys.path.append('timestwoPython')
-    import timestwo
+    from timestwoPython import timestwo
 
     # Call initialize function to set up any necessary state
     print "Calling initialize"
