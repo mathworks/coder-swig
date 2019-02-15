@@ -4,12 +4,12 @@ def main():
 
     # Call initialize function to set up any necessary state
     print "Calling initialize"
-    timestwo.timestwo_initialize();
+    timestwo.timestwo_initialize()
     m = 2
     n = 3
-    dims = timestwo.intArray(2);
-    dims[0] = m;
-    dims[1] = n;
+    dims = timestwo.intArray(2)
+    dims[0] = m
+    dims[1] = n
 
     numel = m*n
 
@@ -36,13 +36,13 @@ def main():
     outputSize = timestwo.intArray.frompointer(y.size)
     outputNumel = 1
     for dim in range(0, outputND):
-        outputNumel *= outputSize[dim];
+        outputNumel *= outputSize[dim]
 
     print_array(output, outputNumel)
 
     # Call terminate function to perform any necessary clean up
     print "Calling terminate"
-    timestwo.timestwo_terminate();
+    timestwo.timestwo_terminate()
 
     # No need to clean up emxArray variables as destructors are
     # automatically called and have the call to emxDestroy_real_T

@@ -4,7 +4,7 @@ def main():
 
     # Call initialize function to set up any necessary state
     print "Calling initialize"
-    timestwo.timestwo_initialize();
+    timestwo.timestwo_initialize()
     m = 2
     n = 3
     numel = m*n
@@ -21,14 +21,14 @@ def main():
     result = timestwo.doubleArray(numel)
 
     # Call entry-point
-    timestwo.timestwo(input.cast(), result.cast());
+    timestwo.timestwo(input.cast(), result.cast())
 
     # Gather returned data
     print_array(result, numel)
 
     # Call terminate function to perform any necessary clean up
     print "Calling terminate"
-    timestwo.timestwo_terminate();
+    timestwo.timestwo_terminate()
 
 def print_array(d, n):
     "Print out values in a doubleArray"
