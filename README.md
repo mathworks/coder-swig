@@ -36,7 +36,7 @@ to see progressively increasing complexity.
    [01-timestwo-scalar/timestwo.i](01-timestwo-scalar/timestwo.i). For
    more complicated interfaces with variable size inputs, `structs`,
    etc. the interface file will be more complex like
-   [03-timestwo-dynamic-size/timestwo.i](03-timestwo-dynamic-size/timestwo.i)). Include
+   [03-timestwo-dynamic-size/timestwo.i](03-timestwo-dynamic-size/timestwo.i). Include
    declarations for the `emxArray` types used in the generated code
    interface.
 
