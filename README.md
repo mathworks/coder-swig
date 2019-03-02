@@ -30,13 +30,15 @@ to see progressively increasing complexity.
 1. Generate code using MATLAB Coder.
 1. Inspect the generated interface header `foo.h` to see the signature
    of the generated code.
-1. Construct your SWIG interface file
-   (e.g. [timestwo.i](03-timestwo-dynamic-size/timestwo.i)). For
-   scalar inputs/outputs, this file will be trivial, just referencing
-   necessary generated API headers. For more complicated interfaces
-   with variable size inputs, `structs`, etc. the interface file will
-   be more complex. Include declarations for the `emxArray` types used
-   in the generated code interface.
+1. Construct your SWIG interface file. For scalar inputs/outputs, this
+   file will be trivial, just referencing necessary generated API
+   headers like
+   [01-timestwo-scalar/timestwo.i](01-timestwo-scalar/timestwo.i). For
+   more complicated interfaces with variable size inputs, `structs`,
+   etc. the interface file will be more complex like
+   [03-timestwo-dynamic-size/timestwo.i](03-timestwo-dynamic-size/timestwo.i)). Include
+   declarations for the `emxArray` types used in the generated code
+   interface.
 
    In all of the non-scalar examples the SWIG
    [carrays.i](http://www.swig.org/Doc1.3/Library.html#Library_carrays)
