@@ -46,7 +46,7 @@ to see progressively increasing complexity.
    the MATLAB Coder build process, construct your Coder build hook
    (e.g. [csharphook.m](03-timestwo-dynamic-size/csharphook.m)). You
    can also compile the SWIG wrapper outside of MATLAB Coder.
-1. Set that as the Coder `PostCodeGenCommand`: `cfg = coder.config('dll'); cfg.PostCodeGenCommand = 'csharphook';` 1.
+1. Set that as the Coder `PostCodeGenCommand`: `cfg = coder.config('dll'); cfg.PostCodeGenCommand = 'csharphook';`
 
 # Requirements
 
