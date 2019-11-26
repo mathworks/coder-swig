@@ -1,4 +1,5 @@
 # Intro
+[![View coder-swig on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/69305-coder-swig)
 
 This project collects examples of using MATLAB Coder to generate C
 code and bringing into another language. The languages shown here are
