@@ -20,20 +20,20 @@ checkedSystem(['swig -module timestwo -python -outdir timestwoPython ' ...
 
 buildInfo.addSourceFiles('timestwo_wrap.c',fullfile(pwd, 'timestwoPython'));
 
-% Update this to match your Python installation by querying python-config:
+% Update this to match your Python installation by querying python3-config:
 %
-% $ python-config --includes
-% -I/usr/include/python2.7 -I/usr/include/x86_64-linux-gnu/python2.7
-buildInfo.addIncludePaths({'/usr/include/python2.7', '/usr/include/x86_64-linux-gnu/python2.7'});
+% $ python3-config --includes
+% -I/usr/include/python3.9 -I/usr/include/python3.9
+buildInfo.addIncludePaths({'/usr/include/python3.9', '/usr/include/python3.9'})
 
 % For libraries
 %
 % $ python-config --ldflags
-% -L/usr/lib/python2.7/config-x86_64-linux-gnu -L/usr/lib -lpython2.7 -lpthread -ldl  -lutil -lm  -Xlinker -export-dynamic -Wl,-O1 -Wl,-Bsymbolic-functions
+% -L/usr/lib/python3.9/config-3.9-x86_64-linux-gnu -L/usr/lib  -lcrypt -lpthread -ldl  -lutil -lm -lm
 libPriority = '';
 libPreCompiled = true;
 libLinkOnly = true;
-libName = 'libpython2.7.so';
-libPath = '/usr/lib/python2.7/config-x86_64-linux-gnu';
+libName = 'libpython3.9.so';
+libPath = '/usr/lib/python3.9/config-3.9-x86_64-linux-gnu';
 buildInfo.addLinkObjects(libName, libPath, ...
                          libPriority, libPreCompiled, libLinkOnly);
